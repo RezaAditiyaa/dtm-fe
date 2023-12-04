@@ -80,7 +80,7 @@ function AppBar(props) {
       <div className="appBar-logo">
         <img
           className="appBar-logo-img"
-          src="src/assets/Untitled-1.png"
+          src="/Untitled-1.png"
           alt=""
         />
       </div>
