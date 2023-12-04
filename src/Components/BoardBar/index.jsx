@@ -33,24 +33,7 @@ function BoardBar(props) {
         fontSize: "18px",
       }}
     >
-      <span>{user ? `Board của ${user}` : "Projek Daily Task Manajemen"}</span>
-
-      {/* Create Board Button */}
-      <a href='/createboard'>
-      <Button
-        variant="contained"
-        color="primary"
-        startIcon={<AddIcon />}
-        onClick={() => {
-          // Handle the logic for creating a new board
-          console.log("Create Board clicked!");
-        }}
-        style={{ fontSize: "8px", padding: "6px 10px", marginRight:"1050px", backgroundColor: '#7b34c0',borderRadius: "8px" }}
-        className="create-board-button"
-      >
-        Create Board
-      </Button>
-      </a>
+      <span>{user ? `Board ${user}` : "Projek Daily Task Manajemen"}</span>
     </Box>
   );
 }

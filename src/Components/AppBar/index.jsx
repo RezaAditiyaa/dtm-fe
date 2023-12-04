@@ -90,19 +90,19 @@ function AppBar(props) {
           className="account-user"
           onClick={() => setIsMenu(true)}
         >
-          <b style={{ fontFamily: "cursive" }}> Hi, {user}</b>
+          <b> Hi, {user}</b>
           {isMenu && (
             <div className="drop-down">
               <div
                 className="drop-down-box"
-                onClick={() => message.info("Tính năng đang bảo trì")}
+                onClick={() => message.info("Sedang Maintenance")}
               >
                 <BiSolidUser />
-                Tài khoản
+                Profile
               </div>
               <div className="drop-down-box" onClick={handleLogout}>
                 <HiOutlineLogout />
-                Đăng xuất
+                Keluar
               </div>
             </div>
           )}
